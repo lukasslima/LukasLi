@@ -77,7 +77,8 @@ width: 300px;
 
 .middle-container {
   background-color: #decdc3;
-  color: #222831
+  color: #222831;
+  height: auto;
 }
 
 .bottom-container {
