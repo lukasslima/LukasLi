@@ -24,19 +24,17 @@ h3 {
 
 a {
   color: #222831;
-  ;
+
 }
 
 
 .top-container {
-  text-align: center;
   position: relative;
   margin-top: 0;
   height: 90vh;
   width: 100%;
   background-color: #ffc93c;
   font-family: Merienda one, serif;
-  /*background: linear-gradient(to right, #529bff 8%, #ffc93c 25%); SUN GRADIENT!!*/
 }
 
 .name-top {
@@ -114,12 +112,15 @@ width: 300px;
   position: absolute;
   top: 18%;
   left: 70%;
+  animation: top-cloud 5s;
+  opacity: 70%;
 }
 
 .bottom-cloud {
   position: absolute;
   top: 40%;
   left: 20%;
+  animation: bottom-cloud 10s;
 }
 
 .mountain {
@@ -198,7 +199,7 @@ hr {
 }
 
 .donate-btn {
-  padding: 30px
+  padding: 30px;
 }
 
 .trademark-bottom {
@@ -262,4 +263,25 @@ hr {
   background: linear-gradient(to bottom, #042f66, #FFFFFF);
   border-radius: 30px;
   text-decoration: none;
+}
+
+
+
+ /* MEDIA QUERIES */
+ @keyframes top-cloud{
+
+  0%{
+    margin-left:-100px;
+  }
+  100%{
+    margin-right:0;
+  }
+}@keyframes bottom-cloud{
+
+ 0%{
+   margin-left:-100px;
+ }
+ 100%{
+   margin-right:0;
+ }
 }
